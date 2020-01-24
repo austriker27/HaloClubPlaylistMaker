@@ -1,0 +1,18 @@
+{
+  "name": "haloplaylistbackend",
+  "version": "0.0.1",
+  "description": "A simple back end to allow the creation of a community managed playlist of match settings for HaloFest",
+  "main": "boot.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Steven Partridge",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "sqlite3": "^4.1.1"
+  }
+}
