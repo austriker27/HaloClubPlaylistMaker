@@ -1,4 +1,5 @@
 <template>
+<div class=" border-green-900 border-t-8">
   <div class="layout">
     <header class="header">
       <strong>
@@ -12,6 +13,7 @@
     </header>
     <slot/>
   </div>
+</div>
 </template>
 
 <static-query>

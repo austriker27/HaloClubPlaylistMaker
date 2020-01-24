@@ -21,3 +21,4 @@ GET: get gametypes based on game version choice
 
 
 ## JSON structure:
+

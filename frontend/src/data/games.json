@@ -1,11 +1,68 @@
 {
-    "games" : {
-        "id": "games",
-        "value": "Game",
-        "game versions" : 
-        [
-            { "title": "halo 1" },
-            { "title": "halo 2" }
-        ]
+    "dropdowns" : {
+        "halo1": { 
+            "name": "Halo 1",
+            "gameTypes": {
+                "captureTheFlag": {
+                    "name": "Capture the flag",
+                    "maps": [
+                        "Blood gluch"
+                    ]
+                },
+                "teamSlayer": {
+                    "name": "Team Slayer",
+                    "maps": [
+                        "Blood gluch"
+                    ]
+                }
+            }
+        },
+        "halo2": {
+            "name": "Halo 2",
+            "gameTypes": {
+                "captureTheFlag": {
+                    "name": "Capture the flag",
+                    "maps": [
+                        "Coagulation"
+                    ]
+                },
+                "teamSlayer": {
+                    "name": "Team Slayer",
+                    "maps": [
+                        "Blood gluch"
+                    ]
+                },
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "Lockout"
+                    ]
+                }
+            }
+        },
+        "halo2anniversary": {
+            "name": "Halo 2 Anniversary",
+            "gameTypes": {
+                "captureTheFlag": {
+                    "name": "Capture the flag",
+                    "maps": [
+                        "Coagulation"
+                    ]
+                },
+                "teamSlayer": {
+                    "name": "Team Slayer",
+                    "maps": [
+                        "Blood gluch"
+                    ]
+                },
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "Lockout"
+                    ]
+                }
+            }
+        }
     }
 }
+
