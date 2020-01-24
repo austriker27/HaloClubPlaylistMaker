@@ -11,9 +11,13 @@
     </p>
 
     <p class="home-links">
-       <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">Vote on Gametypes</a>
-      <a href="https://guestboard.co/join/GKGiYLtuzTXwFry8" target="_blank">RSVP</a>
+        <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">Vote on Gametypes</a>
+        <a href="https://guestboard.co/join/GKGiYLtuzTXwFry8" target="_blank">RSVP</a>
     </p>
+
+    <h3>
+        Upcoming Events:
+    </h3>
 
   </Layout>
 </template>
