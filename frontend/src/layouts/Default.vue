@@ -29,7 +29,7 @@
         </nav>
     </header>
 
-    <div class="flex-grow md:max-w-lg lg:max-w-2xl">
+    <div class="flex-grow md:max-w-lg lg:max-w-2xl mx-auto">
         <slot/>
     </div>
   

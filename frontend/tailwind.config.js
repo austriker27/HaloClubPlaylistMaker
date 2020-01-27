@@ -23,13 +23,9 @@ module.exports = {
                 primary: 'var(--text-copy-primary)',
                 secondary: 'var(--text-copy-secondary)',
             },
+            transparent: 'transparent',
         }
     },
-    colors: {
-
-
-        transparent: 'transparent',
-    }
   },
   variants: {},
   plugins: [],

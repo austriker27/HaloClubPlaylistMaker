@@ -56,7 +56,7 @@
                     </label>
                     <div class="relative">
                         <select class="block appearance-none w-full bg-gray-200 border border-gray-200  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-map" v-model="selectedGameTypeMap">
-                            <option class="text-copy-secondary" v-for="(map, index) in selectedGameType.maps" :key="index" value="map">{{ map }}</option>
+                            <option class="text-copy-secondary" v-for="(map, index) in selectedGameType.maps" :key="index" :value="map">{{ map }}</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 ">
                             <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
@@ -71,7 +71,7 @@
 
             <div class="flex items-center justify-between mt-4" v-if="selectedGameType && selectedGameTypeMap">
                 <p>
-                    Selected: {{ selectedGameType.name }} {{ selectedGame.name }} on {{ selectedGameTypeMap }} 
+                    Selected: {{ selectedGameType.name }} in {{ selectedGame.name }} on {{ selectedGameTypeMap }} 
                 </p>
                 <button class="bg-background-ternary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
                     Submit
@@ -95,7 +95,7 @@ export default {
             dropdowns,
             selectedGame: {},
             selectedGameType: {},
-            selectedGameTypeMap: '',
+            selectedGameTypeMap: "",
             formData: {}
         }
     },
