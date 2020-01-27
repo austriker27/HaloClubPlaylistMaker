@@ -4,13 +4,13 @@
         <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
             <div class="w-40">
                 <g-link v-if="theme === 'theme-light'" to="/"> 
-                    <g-image class="h-16" src="../../static/logo-mc-head--navy.svg" :alt="$static.metadata.siteName + Logo"></g-image> 
+                    <g-image class="h-16" src="../../static/logo-mc-head--navy.svg" :alt="$static.metadata.siteName + 'Logo'"></g-image> 
                 </g-link>
                 <g-link v-else to="/"> 
-                    <g-image class="h-16" src="../../static/logo-mc-head--white.svg" :alt="$static.metadata.siteName + Logo"></g-image> 
+                    <g-image class="h-16" src="../../static/logo-mc-head--white.svg" :alt="$static.metadata.siteName + 'Logo'"></g-image> 
                 </g-link>
             </div>
-            <ul class="uppercase tracking-wide font-bold w-full block flex-grow lg:flex lg:flex-initial lg:w-auto items-center mt-8 lg:mt-0 hidden">
+            <ul class="uppercase tracking-wide font-bold w-full block flex-grow md:flex md:flex-initial md:w-auto items-center mt-8 lg:mt-0">
                 <li class="mr-8 mb-6 lg:mb-0">
                     <a href="#" class="text-copy-primary hover:text-gray-600" to="/about/" @click.prevent="toggleTheme">
                         <svg v-if="theme === 'theme-light'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -33,7 +33,7 @@
         <slot/>
     </div>
   
-    <footer class="bg-green-700 text-white">
+    <footer class="bg-background-secondary text-white">
         <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
             <div>Copyright {{ new Date().getFullYear() }}. All rights reserved.</div>
