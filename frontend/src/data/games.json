@@ -6,13 +6,15 @@
                 "captureTheFlag": {
                     "name": "Capture the flag",
                     "maps": [
-                        "Blood gluch"
+                        "Blood gluch",
+                        "Hang 'Em High"
                     ]
                 },
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
-                        "Blood gluch"
+                        "Chill Out",
+                        "Hang 'Em High"
                     ]
                 }
             }
@@ -20,22 +22,39 @@
         "halo2": {
             "name": "Halo 2",
             "gameTypes": {
-                "captureTheFlag": {
+                "CTF": {
                     "name": "Capture the flag",
                     "maps": [
-                        "Coagulation"
+                        "Coagulation",
+                        "Sanctuary"
+                    ]
+                },
+                "1flagCTF": {
+                    "name": "1 Flag CTF",
+                    "maps": [
+                        "Zanzibar",
+                        "Lockout",
+                        "Ivory Tower",
+                        "Ascension"
                     ]
                 },
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
-                        "Blood gluch"
+                        "Blood gluch",
+                        "Zanzibar",
+                        "Ivory Tower",
+                        "Ascension",
+                        "Foundation"
                     ]
                 },
                 "teamSwat": {
                     "name": "Team SWAT",
                     "maps": [
-                        "Lockout"
+                        "Lockout",
+                        "Sanctuary",
+                        "Ivory Tower",
+                        "Colossus"
                     ]
                 }
             }
@@ -59,6 +78,38 @@
                     "name": "Team SWAT",
                     "maps": [
                         "Lockout"
+                    ]
+                }
+            }
+        },
+        "halo3": {
+            "name": "Halo 3",
+            "gameTypes": {
+                "captureTheFlag": {
+                    "name": "Capture the flag",
+                    "maps": [
+                        "Valhalla"
+                    ]
+                },
+                "1flagCTF": {
+                    "name": "1 Flag CTF",
+                    "maps": [
+                        "Last Resort"
+                    ]
+                },
+                "teamSlayer": {
+                    "name": "Team Slayer",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "Valhalla"
+                    ]
+                },
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "The Pit",
+                        "Guardian"
                     ]
                 }
             }

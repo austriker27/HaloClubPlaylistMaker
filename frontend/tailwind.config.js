@@ -3,10 +3,9 @@ module.exports = {
     extend: {
         container: {
             padding: '1rem'
-        }
-    },
-    colors: {
-        background: {
+        },
+        colors: {
+            background: {
             // 'primary': 'white',
             // 'secondary': '#F7FAFC',
             // 'ternary': '#E2E8F0',
@@ -17,12 +16,16 @@ module.exports = {
             primary: 'var(--bg-background-primary)',
             secondary: 'var(--bg-background-secondary)',
             ternary: 'var(--bg-background-ternary)',
-        },
+            },
 
-        copy: {
-             primary: 'var(--text-copy-primary)',
-             secondary: 'var(--text-copy-secondary)',
-        },
+            copy: {
+                primary: 'var(--text-copy-primary)',
+                secondary: 'var(--text-copy-secondary)',
+            },
+        }
+    },
+    colors: {
+
 
         transparent: 'transparent',
     }
