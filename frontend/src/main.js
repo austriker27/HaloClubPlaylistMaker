@@ -27,7 +27,7 @@ head.meta.push({
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Montserrat&display=swap'
+    href: 'https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900&display=swap'
   })
 
 }
