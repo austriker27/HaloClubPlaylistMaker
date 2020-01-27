@@ -96,7 +96,7 @@ export default {
     methods: {
         toggleTheme() {
             this.theme = this.theme === 'theme-light' ? 'theme-dark' : 'theme-light';
-            if(process.env.NODE_ENV == development) {
+            if(process.env.NODE_ENV == 'development') {
                 localStorage.setItem('theme', this.theme)
             }
         }
@@ -105,7 +105,7 @@ export default {
         console.log(process.env.NODE_ENV)
     },
     created() {
-        if(process.env.NODE_ENV == development) {
+        if(process.env.NODE_ENV == 'development') {
             this.theme = localStorage.getItem('theme') || 'theme-dark';
         }
     }
