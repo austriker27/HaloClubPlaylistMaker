@@ -2,7 +2,7 @@
 <div class="border-green-900 border-t-8 content-wrapper bg-background-primary text-copy-primary flex flex-col min-h-screen" :class="theme">
     <header class="border-t-14 border-green-900">
         <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
-            <div class="w-40">
+            <div class="w-full md:w-40">
                 <g-link v-if="theme === 'theme-light'" to="/"> 
                     <g-image class="h-16" src="../../static/logo-mc-head--navy.svg" :alt="$static.metadata.siteName + 'Logo'"></g-image> 
                 </g-link>
