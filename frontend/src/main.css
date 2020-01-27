@@ -1,5 +1,22 @@
 @tailwind base;
 
+
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+
+@font-face {
+  font-family: ArameNumbersHeavy;
+  font-weight: normal;
+  src: url(./assets/ArameNumbersHeavy.ttf) format("ttf");
+}
+
 @tailwind components;
 
 @tailwind utilities;
@@ -20,6 +37,16 @@
 
     --text-copy-primary: #CBD5E0;
     --text-copy-secondary: #e2e8f0;
+}
+
+.lift {
+    transition: transform 0.35s ease-in-out;
+}
+
+@variants hover {
+    .lift-up {
+        transform: translateY(-15px);
+    }
 }
 
 .content-wrapper {

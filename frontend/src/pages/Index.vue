@@ -3,21 +3,21 @@
         <div class="container flex flex-col justify-between py-16">
 
             <div>
-                <h1>Woodinville Halofest</h1>
+                <h1 class="mb-2 font-bold">Woodinville Halofest</h1>
                 <p>
                 Welcome to the online home of the Woodinville Halofest. We regularly hold Halofests filled with lots of fun, frivolty, mountain dewski, and masterchief pwning newbs. All are welcome. 
                 </p>
             </div>
 
-            <div>
+            <!-- <div>
                 <p class="home-links">
                     <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">Vote on Gametypes</a>
                     <a href="https://guestboard.co/join/GKGiYLtuzTXwFry8" target="_blank">RSVP</a>
                 </p>
-            </div>
+            </div> -->
 
             <div>
-                <h3>
+                <h3 class="my-5">
                     Upcoming Events:
                 </h3>
 
