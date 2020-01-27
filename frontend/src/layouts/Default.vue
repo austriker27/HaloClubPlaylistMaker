@@ -96,12 +96,16 @@ export default {
     methods: {
         toggleTheme() {
             this.theme = this.theme === 'theme-light' ? 'theme-dark' : 'theme-light';
-            localStorage.setItem('theme', this.theme)
+            // if(window.localStorage) {
+            //     localStorage.setItem('theme', this.theme)
+            // }
         }
     },
-    created() {
-        this.theme = localStorage.getItem('theme') || 'theme-dark';
-    }
+    // created() {
+    //     if(window.localStorage) {
+    //         this.theme = localStorage.getItem('theme') || 'theme-dark';
+    //     }
+    // }
 }
 </script>
 
