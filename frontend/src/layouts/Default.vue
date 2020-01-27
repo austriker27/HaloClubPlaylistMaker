@@ -96,16 +96,19 @@ export default {
     methods: {
         toggleTheme() {
             this.theme = this.theme === 'theme-light' ? 'theme-dark' : 'theme-light';
-            // if(window.localStorage) {
-            //     localStorage.setItem('theme', this.theme)
-            // }
+            if(process.env.NODE_ENV == development) {
+                localStorage.setItem('theme', this.theme)
+            }
         }
     },
-    // created() {
-    //     if(window.localStorage) {
-    //         this.theme = localStorage.getItem('theme') || 'theme-dark';
-    //     }
-    // }
+    mounted() {
+        console.log(process.env.NODE_ENV)
+    },
+    created() {
+        if(process.env.NODE_ENV == development) {
+            this.theme = localStorage.getItem('theme') || 'theme-dark';
+        }
+    }
 }
 </script>
 
