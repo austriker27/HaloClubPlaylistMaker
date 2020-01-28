@@ -35,6 +35,7 @@ h3 {
 
     --text-copy-primary: #2D3748;
     --text-copy-secondary: #4a5568;
+    --text-copy-ternary: green;
 }
 
 .theme-dark {
@@ -44,6 +45,7 @@ h3 {
 
     --text-copy-primary: #CBD5E0;
     --text-copy-secondary: #e2e8f0;
+    --text-copy-ternary: green;
 }
 
 .lift {

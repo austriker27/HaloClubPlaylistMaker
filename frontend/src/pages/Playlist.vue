@@ -80,15 +80,31 @@
         </form>
 
       </div>
+
+    <!-- area of box -->
+      <div class="my-20 flex flex-wrap">
+          <GameCard 
+            photoUrl="https://static.trueachievements.com/customimages/033846.jpg"
+            title="Lockout"
+            description="description of thing"
+          />
+
+
+      </div>
   </Layout>
 </template>
 
 <script>
 import { dropdowns } from '@/data/games.json'
+import GameCard from '~/components/GameCard.vue'
+
 
 export default {
     metaInfo: {
         title: 'Playlist Generator',
+    },
+    components: {
+        GameCard
     },
     data () {
         return { 
