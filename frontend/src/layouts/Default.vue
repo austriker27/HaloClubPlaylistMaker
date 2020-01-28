@@ -112,12 +112,5 @@ export default {
 }
 </script>
 
-<style>
-@font-face {
-  font-family: ArameNumbersHeavy;
-  src: url(../assets/ArameNumbersHeavy.ttf) format("ttf");
-}
-
-</style>
 
 <style src="../main.css" />

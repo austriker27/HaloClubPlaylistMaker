@@ -12,9 +12,17 @@ h3 {
 }
 
 @font-face {
-  font-family: ArameNumbersHeavy;
-  src: url(./assets/ArameNumbersHeavy.ttf) format("ttf");
+    font-family: 'ArameNumbersHeavy';
+    src: url('./assets/ArameNumbersHeavy.eot');
+    src: url('./assets/ArameNumbersHeavy.eot?#iefix') format('embedded-opentype'),
+        url('./assets/ArameNumbersHeavy.woff2') format('woff2'),
+        url('./assets/ArameNumbersHeavy.woff') format('woff'),
+        url('./assets/ArameNumbersHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
+
+
 
 @tailwind components;
 
