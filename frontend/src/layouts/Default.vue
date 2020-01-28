@@ -36,7 +36,7 @@
     
     <div class="newsletter bg-background-secondary">
         <div class="container md:max-w-lg lg:max-w-2xl py-16 pb-8 text-center textl-xl">
-            <h2 class="text-2xl font-black mb-8 font-sans">Want to know when future halofests happen?</h2>
+            <h2 class="text-1xl font-black mb-8 font-sans">Want to know when future halofests happen?</h2>
 
             <div class="w-4/5 mx-auto mb-8">
                 <form 
@@ -53,7 +53,7 @@
                         Don’t fill this out: <input name="bot-field" />
                         </label>
                     </p>
-                    <div class="flex flex-col sm:flex-row">
+                    <div class="flex flex-col sm:flex-row text-base">
                         <input type="email" name="email" placeholder="Your email address" class=" font-halo flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10" required v-model="formData.email">
                         <button type="submit" data-element="submit" class="font-halo flex-2 w-40 uppercase bg-green-700 text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-green-800 focus:bg-green-800 z-10 w-full sm:w-auto mt-4 sm:mt-0">
                             <span>Subscribe</span>

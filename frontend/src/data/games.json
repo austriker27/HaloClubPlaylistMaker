@@ -6,15 +6,15 @@
                 "captureTheFlag": {
                     "name": "Capture the flag",
                     "maps": [
-                        "Blood gluch",
-                        "Hang 'Em High"
+                        "Blood Gulch",
+                        "Hang Em High"
                     ]
                 },
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
                         "Chill Out",
-                        "Hang 'Em High"
+                        "Hang Em High"
                     ]
                 }
             }
@@ -41,7 +41,7 @@
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
-                        "Blood gluch",
+                        "Blood Gulch",
                         "Zanzibar",
                         "Ivory Tower",
                         "Ascension",
