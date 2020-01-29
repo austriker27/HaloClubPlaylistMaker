@@ -12,12 +12,17 @@ export default function (Vue, { router, head, isClient }) {
 
 head.meta.push({
     name: 'keywords',
-    content: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS'
+    content: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS,Halo,Halofest,Halo Masterchief,Halo masterchief collection,bungie'
   })
+
+//   head.meta.push({
+//     name: 'title',
+//     content: 'Woodinville Halofest 😇🎮🕹'
+//   })
 
   head.meta.push({
     name: 'description',
-    content: 'Woodinville Halofest'
+    content: 'A halofest club of sorts where the 2000s Halofest LAN Party lives on in full dew-filled glory 😇🎮🕹'
   })
 
   head.meta.push({
