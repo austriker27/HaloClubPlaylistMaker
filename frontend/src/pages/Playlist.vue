@@ -78,7 +78,17 @@
                     {{ selectedGame.name }}: {{ selectedGameType.name }} on {{ selectedGameTypeMap }}.
                     </p>
                 </div>
-                <button class="bg-background-ternary rounded border-b-2 border-green-900 hover:border-green-900 hover:bg-green-900 hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <button 
+                    class="font-regular bg-background-secondary rounded border-2 border-green-900 hover:border-green-900 hover:bg-green-900 hover:text-white text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                    type="button"
+                    @click="resetForm()"
+                >
+                    Reset
+                </button>
+                <button 
+                    class="bg-background-ternary rounded border-b-2 border-green-900 hover:border-green-900 hover:bg-green-900 hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                    type="button"
+                >
                     Submit
                 </button>
             </div>
@@ -95,7 +105,8 @@
             :photoUrl="getImageUrl('HALO_GAMES', game.name)"
             v-model="selectedGame"
             :title="game.name"
-            :key="game.name" 
+            :key="game.name"
+            
         />
     </div>
     <!-- GAMETYPE CARDS -->
@@ -118,6 +129,7 @@
             v-model="selectedGameTypeMap"
             :title="map"
             :key="map" 
+            typeMap="true"
         />
     </div>
 
@@ -153,7 +165,6 @@ export default {
     },
     methods: {
         getImageUrl(type, item) {
-            console.log(item)
             return IMAGE_URLS[ type ][ item ].imageUrl || 'https://wallpaperaccess.com/full/173893.jpg';
 		},
         encode(data) {
@@ -172,11 +183,15 @@ export default {
                     ...this.formData,
                 }),
             })
-            .then(() => this.$router.push('/success'))
+
+            this.resetForm()
+
+            .then(() => console.log('success'))
             .catch(error => alert(error))
         },
         resetForm() {
-            this.selectedGameType = {},
+            this.selectedGame = "",
+            this.selectedGameType = "",
             this.selectedGameTypeMap = "",
             this.formStateEmpty = true
         },

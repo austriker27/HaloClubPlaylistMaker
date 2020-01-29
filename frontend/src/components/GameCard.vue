@@ -1,7 +1,12 @@
 <template>
 
     <div @click="clickedCard" class="max-w-sm rounded overflow-hidden hover:shadow-xl lift hover:lift-up font-halo cursor-pointer m-5">
-        <div class="bg-cover bg-no-repeat bg-center relative h-64 w-64" :style="{ backgroundImage: `url('${photoUrl}')` }" >
+        <!-- bg is contain if map, cover if not -->
+        <div 
+        class="bg-no-repeat bg-center relative h-64 w-64 bg-background-secondary" 
+        :class="[typeMap ? 'bg-cover' : 'bg-contain']"
+        :style="{ backgroundImage: `url('${photoUrl}')` }" 
+        >
             <div class="p-2 pl-4 absolute bottom-0 w-full bg-background-ternary text-copy-primary">
                 <p class="text-base">
                     {{ title }}
@@ -28,6 +33,10 @@ export default {
       },
       photoUrl: {
           type: String,
+      },
+      typeMap: {
+          type: Boolean,
+          default: false,
       }
   },
   methods: {
