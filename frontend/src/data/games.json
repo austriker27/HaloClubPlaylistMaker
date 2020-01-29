@@ -7,14 +7,18 @@
                     "name": "Capture the flag",
                     "maps": [
                         "Blood Gulch",
-                        "Hang Em High"
+                        "Hang Em High",
+                        "Battle Creek",
+                        "Prisoner"
                     ]
                 },
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
                         "Chill Out",
-                        "Hang Em High"
+                        "Hang Em High",
+                        "Battle Creek",
+                        "Prisoner"
                     ]
                 }
             }
@@ -26,7 +30,9 @@
                     "name": "Capture the flag",
                     "maps": [
                         "Coagulation",
-                        "Sanctuary"
+                        "Sanctuary",
+                        "Headlong",
+                        "Elongation"
                     ]
                 },
                 "1flagCTF": {
@@ -35,17 +41,25 @@
                         "Zanzibar",
                         "Lockout",
                         "Ivory Tower",
-                        "Ascension"
+                        "Ascension",
+                        "Burial Mounds"
                     ]
                 },
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
-                        "Blood Gulch",
+                        "Coagulation",
                         "Zanzibar",
                         "Ivory Tower",
                         "Ascension",
-                        "Foundation"
+                        "Foundation",
+                        "Headlong"
+                    ]
+                },
+                "towerOfPower": {
+                    "name": "Tower Of Power!",
+                    "maps": [
+                        "Ascension"
                     ]
                 },
                 "teamSwat": {
@@ -54,7 +68,70 @@
                         "Lockout",
                         "Sanctuary",
                         "Ivory Tower",
-                        "Colossus"
+                        "Colossus",
+                        "Elongation"
+                    ]
+                },
+                "teamSnipers": {
+                    "name": "Team Snipers",
+                    "maps": [
+                        "Headlong",
+                        "Colossus",
+                        "Coagulation"
+                    ]
+                },
+                "teamRockets": {
+                    "name": "Team Rockets",
+                    "maps": [
+                        "Coagulation",
+                        "Zanzibar",
+                        "Ivory Tower",
+                        "Ascension",
+                        "Foundation",
+                        "Headlong"
+                    ]
+                },
+                "shottySnipers": {
+                    "name": "Team Shotty Snipers",
+                    "maps": [
+                        "Coagulation",
+                        "Zanzibar",
+                        "Ivory Tower",
+                        "Ascension",
+                        "Foundation",
+                        "Headlong"
+                    ]
+                },
+                "teamFiesta": {
+                    "name": "Team Fiesta",
+                    "maps": [
+                        "Coagulation",
+                        "Zanzibar",
+                        "Ivory Tower",
+                        "Ascension",
+                        "Foundation",
+                        "Headlong"
+                    ]
+                },
+                "teamSwords": {
+                    "name": "Team Swords",
+                    "maps": [
+                        "Lockout",
+                        "Sanctuary",
+                        "Ivory Tower",
+                        "Colossus",
+                        "Elongation",
+                        "Midship"
+                    ]
+                },
+                "singleBombAssault": {
+                    "name": "Single Bomb Assault",
+                    "maps": [
+                        "Zanzibar",
+                        "Lockout",
+                        "Ivory Tower",
+                        "Ascension",
+                        "Burial Mounds"
                     ]
                 }
             }
@@ -65,19 +142,31 @@
                 "captureTheFlag": {
                     "name": "Capture the flag",
                     "maps": [
-                        "Coagulation"
+                        "Lockdown",
+                        "Zenith",
+                        "Stonetown",
+                        "Bloodline",
+                        "Shrine"
                     ]
                 },
                 "teamSlayer": {
                     "name": "Team Slayer",
                     "maps": [
-                        "Blood gluch"
+                        "Lockdown",
+                        "Zenith",
+                        "Stonetown",
+                        "Bloodline",
+                        "Shrine"
                     ]
                 },
                 "teamSwat": {
                     "name": "Team SWAT",
                     "maps": [
-                        "Lockout"
+                        "Lockdown",
+                        "Zenith",
+                        "Stonetown",
+                        "Bloodline",
+                        "Shrine"
                     ]
                 }
             }
@@ -88,13 +177,17 @@
                 "captureTheFlag": {
                     "name": "Capture the flag",
                     "maps": [
-                        "Valhalla"
+                        "Valhalla",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff"
                     ]
                 },
                 "1flagCTF": {
                     "name": "1 Flag CTF",
                     "maps": [
-                        "Last Resort"
+                        "Last Resort",
+                        "High Ground"
                     ]
                 },
                 "teamSlayer": {
@@ -102,14 +195,119 @@
                     "maps": [
                         "The Pit",
                         "Guardian",
-                        "Valhalla"
+                        "Valhalla",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff",
+                        "Ghost Town"
+                    ]
+                },
+                "teamFiesta": {
+                    "name": "Team Fiesta",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "Valhalla",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff",
+                        "Ghost Town"
+                    ]
+                },
+                "teamRockets": {
+                    "name": "Team Rockets",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "Valhalla",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff",
+                        "Ghost Town"
+                    ]
+                },
+                "shottySnipers": {
+                    "name": "Team Shotty Snipers",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "Valhalla",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff",
+                        "Ghost Town"
+                    ]
+                },
+                "teamDuels": {
+                    "name": "Team Duels",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound"
+                    ]
+                },
+                "infection": {
+                    "name": "Infection",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound"
                     ]
                 },
                 "teamSwat": {
                     "name": "Team SWAT",
                     "maps": [
                         "The Pit",
-                        "Guardian"
+                        "Guardian",
+                        "Construct",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff",
+                        "Ghost Town"
+                    ]
+                }
+            }
+        },
+        "Reach": {
+            "name": "Reach",
+            "gameTypes": {
+                "captureTheFlag": {
+                    "name": "Capture the flag",
+                    "maps": [
+                        "Boardwalk",
+                        "Boneyard",
+                        "Countdown",
+                        "Powerhouse",
+                        "Tempest"
+                    ]
+                },
+                "teamSlayer": {
+                    "name": "Team Slayer",
+                    "maps": [
+                        "Boardwalk",
+                        "Boneyard",
+                        "Countdown",
+                        "Powerhouse",
+                        "Tempest"
+                    ]
+                },
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "Boardwalk",
+                        "Boneyard",
+                        "Countdown",
+                        "Powerhouse",
+                        "Tempest"
                     ]
                 }
             }
