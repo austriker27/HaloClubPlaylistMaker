@@ -10,7 +10,7 @@
                     <g-image class="h-16" src="../../static/logo-mc-head--white.svg" :alt="$static.metadata.siteName + 'Logo'"></g-image> 
                 </g-link>
             </div>
-            <ul class="uppercase tracking-wide font-bold w-full block flex-grow md:flex md:flex-initial md:w-auto items-center mt-8 lg:mt-0 font-halo">
+            <ul class="uppercase tracking-wide font-bold w-full block flex-grow md:flex md:flex-initial md:w-auto items-center mt-8 lg:mt-0 font-haloSans">
                 <li class="mr-8 mb-6 lg:mb-0">
                     <a href="#" class="text-copy-primary hover:text-gray-600" to="/about/" @click.prevent="toggleTheme">
                         <svg v-if="theme === 'theme-light'" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
@@ -54,8 +54,8 @@
                         </label>
                     </p>
                     <div class="flex flex-col sm:flex-row text-base">
-                        <input type="email" name="email" placeholder="Your email address" class=" font-halo flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10" required v-model="formData.email">
-                        <button type="submit" data-element="submit" class="font-halo flex-2 w-40 uppercase bg-green-700 text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-green-800 focus:bg-green-800 z-10 w-full sm:w-auto mt-4 sm:mt-0">
+                        <input type="email" name="email" placeholder="Your email address" class=" font-haloSans flex-1 bg-background-form rounded sm:rounded-r-none px-4 py-4 leading-normal border border-border-color-primary sm:border-r-0 shadow outline-none focus:border-green-700 z-10" required v-model="formData.email">
+                        <button type="submit" data-element="submit" class="font-haloSans flex-2 w-40 uppercase bg-green-700 text-white rounded sm:rounded-l-none text-lg py-3 px-8 tracking-wide shadow focus:outline-none hover:bg-green-800 focus:bg-green-800 z-10 w-full sm:w-auto mt-4 sm:mt-0">
                             <span>Subscribe</span>
                         </button>
                     </div>

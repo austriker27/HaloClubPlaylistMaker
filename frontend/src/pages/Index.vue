@@ -3,7 +3,9 @@
         <div class="container flex flex-col justify-between py-16">
 
             <div>
-                <h1 class="mb-2 font-black">Woodinville Halofest</h1>
+                <!-- <h1 class="mb-2 font-black">Woodinville Halofest</h1> -->
+                
+                <h1 class="text-5xl font-halo mb-2">Woodinville Halofests</h1>
                 <p>
                 Welcome to the online home of the Woodinville Halofest. We regularly hold Halofests filled with lots of fun, frivolty, mountain dewski, and masterchief pwning newbs. All are welcome. 
                 </p>

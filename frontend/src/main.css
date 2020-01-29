@@ -22,7 +22,16 @@ h3 {
     font-style: normal;
 }
 
-
+@font-face {
+    font-family: 'Halo';
+    src: url('./assets/Halo.eot');
+    src: url('./assets/Halo.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Halo.woff2') format('woff2'),
+        url('./assets/Halo.woff') format('woff'),
+        url('./assets/Halo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @tailwind components;
 

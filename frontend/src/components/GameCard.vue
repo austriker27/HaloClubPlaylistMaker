@@ -1,6 +1,6 @@
 <template>
 
-    <div @click="clickedCard" class="max-w-sm rounded overflow-hidden hover:shadow-xl lift hover:lift-up font-halo cursor-pointer m-5">
+    <div @click="clickedCard" class="max-w-sm rounded overflow-hidden hover:shadow-xl lift hover:lift-up font-haloSans cursor-pointer m-5">
         <!-- bg is contain if map, cover if not -->
         <div 
         class="bg-no-repeat bg-center relative h-64 w-64 bg-background-secondary" 

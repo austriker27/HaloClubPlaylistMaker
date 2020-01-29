@@ -28,7 +28,10 @@ module.exports = {
           },
       },
       fontFamily: {
-        halo: [
+          halo: [
+            'Halo',
+        ],
+        haloSans: [
             'ArameNumbersHeavy',
         ],
         sans: [

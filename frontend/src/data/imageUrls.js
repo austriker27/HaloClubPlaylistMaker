@@ -205,7 +205,7 @@ export default {
         'Halo 2 Anniversary': {
 			name: 'Halo 2 Anniversary',
 			imageUrl:
-				'',
+				'https://vignette.wikia.nocookie.net/halo/images/7/78/Halo_2_Anniv.jpg/revision/latest?cb=20140626101150',
         },
         'Halo 3': {
 			name: 'Halo 3',
@@ -220,7 +220,7 @@ export default {
         'Halo Reach': {
 			name: 'Halo Reach',
 			imageUrl:
-				'',
+				'https://cdn.freebiesupply.com/logos/thumbs/2x/halo-reach-logo-1-logo.png',
         },
     },
     HALO_GAMETYPES: {
