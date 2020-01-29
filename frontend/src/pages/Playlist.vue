@@ -153,6 +153,7 @@ export default {
     },
     methods: {
         getImageUrl(type, item) {
+            console.log(item)
             return IMAGE_URLS[ type ][ item ].imageUrl || 'https://wallpaperaccess.com/full/173893.jpg';
 		},
         encode(data) {

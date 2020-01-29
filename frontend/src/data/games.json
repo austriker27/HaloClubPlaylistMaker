@@ -26,6 +26,16 @@
         "halo2": {
             "name": "Halo 2",
             "gameTypes": {
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "Lockout",
+                        "Sanctuary",
+                        "Ivory Tower",
+                        "Colossus",
+                        "Elongation"
+                    ]
+                },
                 "CTF": {
                     "name": "Capture the flag",
                     "maps": [
@@ -57,21 +67,12 @@
                     ]
                 },
                 "towerOfPower": {
-                    "name": "Tower Of Power!",
+                    "name": "Tower Of Power",
                     "maps": [
                         "Ascension"
                     ]
                 },
-                "teamSwat": {
-                    "name": "Team SWAT",
-                    "maps": [
-                        "Lockout",
-                        "Sanctuary",
-                        "Ivory Tower",
-                        "Colossus",
-                        "Elongation"
-                    ]
-                },
+                
                 "teamSnipers": {
                     "name": "Team Snipers",
                     "maps": [
@@ -139,6 +140,16 @@
         "halo2anniversary": {
             "name": "Halo 2 Anniversary",
             "gameTypes": {
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "Lockdown",
+                        "Zenith",
+                        "Stonetown",
+                        "Bloodline",
+                        "Shrine"
+                    ]
+                },
                 "captureTheFlag": {
                     "name": "Capture the flag",
                     "maps": [
@@ -158,22 +169,25 @@
                         "Bloodline",
                         "Shrine"
                     ]
-                },
-                "teamSwat": {
-                    "name": "Team SWAT",
-                    "maps": [
-                        "Lockdown",
-                        "Zenith",
-                        "Stonetown",
-                        "Bloodline",
-                        "Shrine"
-                    ]
-                }
+                }                
             }
         },
         "halo3": {
             "name": "Halo 3",
             "gameTypes": {
+                "teamSwat": {
+                    "name": "Team SWAT",
+                    "maps": [
+                        "The Pit",
+                        "Guardian",
+                        "Construct",
+                        "High Ground",
+                        "Narrows",
+                        "Snowbound",
+                        "Standoff",
+                        "Ghost Town"
+                    ]
+                },
                 "captureTheFlag": {
                     "name": "Capture the flag",
                     "maps": [
@@ -261,24 +275,12 @@
                         "Narrows",
                         "Snowbound"
                     ]
-                },
-                "teamSwat": {
-                    "name": "Team SWAT",
-                    "maps": [
-                        "The Pit",
-                        "Guardian",
-                        "Construct",
-                        "High Ground",
-                        "Narrows",
-                        "Snowbound",
-                        "Standoff",
-                        "Ghost Town"
-                    ]
                 }
+                
             }
         },
-        "Reach": {
-            "name": "Reach",
+        "Halo Reach": {
+            "name": "Halo Reach",
             "gameTypes": {
                 "captureTheFlag": {
                     "name": "Capture the flag",

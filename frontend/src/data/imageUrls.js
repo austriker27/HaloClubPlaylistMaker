@@ -16,6 +16,16 @@ export default {
             imageUrl:
                 'https://upload.wikimedia.org/wikipedia/en/4/49/Blood_Gulch.png',
         },
+        'Battle Creek': {
+            name: 'Battle Creek',
+            imageUrl:
+                '',
+        },
+        'Prisoner': {
+            name: 'Prisoner',
+            imageUrl:
+                '',
+        },
         // HALO 2 MAPS
 		"Lockout": {
 			name: 'Lockout',
@@ -47,13 +57,59 @@ export default {
 			imageUrl:
 				'',
         },
-        'Santuary': {
-			name: 'Santuary',
+        'Sanctuary': {
+			name: 'Sanctuary',
 			imageUrl:
 				'',
         },
         'Colossus': {
 			name: 'Colossus',
+			imageUrl:
+				'',
+        },
+        'Headlong': {
+			name: 'Headlong',
+			imageUrl:
+				'',
+        },
+        'Elongation': {
+			name: 'Elongation',
+			imageUrl:
+				'',
+        },
+        'Burial Mounds': {
+			name: 'Burial Mounds',
+			imageUrl:
+				'',
+        },
+        'Midship': {
+			name: 'Midship',
+			imageUrl:
+				'',
+        },
+        // HALO 2 ANNIVERSARY
+        'Lockdown': {
+			name: 'Lockdown',
+			imageUrl:
+				'',
+        },
+        'Zenith': {
+			name: 'Zenith',
+			imageUrl:
+				'',
+        },
+        'Stonetown': {
+			name: 'Stonetown',
+			imageUrl:
+				'',
+        },
+        'Bloodline': {
+			name: 'Bloodline',
+			imageUrl:
+				'',
+        },
+        'Shrine': {
+			name: 'Shrine',
 			imageUrl:
 				'',
         },
@@ -78,7 +134,62 @@ export default {
 			imageUrl:
 				'',
         },
-        // HALO 4 MAPS
+        'Narrows': {
+			name: 'Narrows',
+			imageUrl:
+				'',
+        },
+        'Standoff': {
+			name: 'Standoff',
+			imageUrl:
+				'',
+        },
+        'Snowbound': {
+			name: 'Snowbound',
+			imageUrl:
+				'',
+        },
+        'High Ground': {
+			name: 'High Ground',
+			imageUrl:
+				'',
+        },
+        'Ghost Town': {
+			name: 'Ghost Town',
+			imageUrl:
+				'',
+        },
+        'Construct': {
+			name: 'Construct',
+			imageUrl:
+				'',
+        },
+        // HALO REACH MAPS
+        'Boardwalk': {
+			name: 'Boardwalk',
+			imageUrl:
+				'',
+        },
+        'Boneyard': {
+			name: 'Boneyard',
+			imageUrl:
+				'',
+        },
+        'Countdown': {
+			name: 'Countdown',
+			imageUrl:
+				'',
+        },
+        'Powerhouse': {
+			name: 'Powerhouse',
+			imageUrl:
+				'',
+        },
+        'Tempest': {
+			name: 'Tempest',
+			imageUrl:
+				'',
+        },
     },
 	HALO_GAMES: {
         'Halo 1': {
@@ -132,6 +243,56 @@ export default {
 			name: 'Team SWAT',
 			imageUrl:
 				'https://vignette.wikia.nocookie.net/halo/images/0/0e/Slayer_Icon.svg',
+        },
+        'Team SWAT': {
+			name: 'Team SWAT',
+			imageUrl:
+				'',
+        },
+        'Infection': {
+			name: 'Infection',
+			imageUrl:
+				'',
+        },
+        'Team Duels': {
+			name: 'Team Duels',
+			imageUrl:
+				'',
+        },
+        'Team Shotty Snipers': {
+			name: 'Team Shotty Snipers',
+			imageUrl:
+				'',
+        },
+        'Team Rockets': {
+			name: 'Team Rockets',
+			imageUrl:
+				'',
+        },
+        'Team Fiesta': {
+			name: 'Team Fiesta',
+			imageUrl:
+				'',
+        },
+        'Single Bomb Assault': {
+			name: 'Single Bomb Assault',
+			imageUrl:
+				'',
+        },
+        'Team Swords': {
+			name: 'Team Swords',
+			imageUrl:
+				'',
+        },
+        'Team Snipers': {
+			name: 'Team Snipers',
+			imageUrl:
+				'',
+        },
+        'Tower Of Power': {
+			name: 'Tower Of Power',
+			imageUrl:
+				'',
         },
     },
 };
