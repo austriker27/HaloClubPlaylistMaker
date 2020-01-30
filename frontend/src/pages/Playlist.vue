@@ -101,7 +101,6 @@
     <div class="my-20 flex flex-wrap justify-around" v-if="!selectedGame">
         <GameCard 
             v-for="game in dropdowns"
-            @clicked-card="handleCardGameClick(game.name)"
             :photoUrl="getImageUrl('HALO_GAMES', game.name)"
             v-model="selectedGame"
             :title="game.name"
@@ -113,7 +112,6 @@
     <div class="my-20 flex flex-wrap justify-around"  v-if="!selectedGameType">
         <GameCard 
             v-for="type in selectedGame.gameTypes"
-            @clicked-card="handleCardGameTypeClick(type.name)"
             :photoUrl="getImageUrl('HALO_GAMETYPES', type.name)"
             v-model="selectedGameType"
             :title="type.name"
@@ -124,7 +122,6 @@
     <div class="my-20 flex flex-wrap justify-around" v-if="!selectedGameTypeMap">
         <GameCard 
             v-for="map in selectedGameType.maps"
-            @clicked-card="handleCardGameTypeMapClick(map)"
             :photoUrl="getImageUrl('HALO_MAPS', map)"
             v-model="selectedGameTypeMap"
             :title="map"
