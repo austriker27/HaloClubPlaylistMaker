@@ -1,0 +1,72 @@
+@tailwind base;
+
+
+h1 {
+  @apply text-2xl;
+}
+h2 {
+  @apply text-xl;
+}
+h3 {
+  @apply text-lg;
+}
+
+@font-face {
+    font-family: 'ArameNumbersHeavy';
+    src: url('./assets/ArameNumbersHeavy.eot');
+    src: url('./assets/ArameNumbersHeavy.eot?#iefix') format('embedded-opentype'),
+        url('./assets/ArameNumbersHeavy.woff2') format('woff2'),
+        url('./assets/ArameNumbersHeavy.woff') format('woff'),
+        url('./assets/ArameNumbersHeavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halo';
+    src: url('./assets/Halo.eot');
+    src: url('./assets/Halo.eot?#iefix') format('embedded-opentype'),
+        url('./assets/Halo.woff2') format('woff2'),
+        url('./assets/Halo.woff') format('woff'),
+        url('./assets/Halo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+.theme-light {
+    --bg-background-primary: white;
+    --bg-background-secondary: #F7FAFC;
+    --bg-background-ternary: #E2E8F0;
+
+    --text-copy-primary: #2D3748;
+    --text-copy-secondary: #4a5568;
+    --text-copy-ternary: green;
+}
+
+.theme-dark {
+    --bg-background-primary: #0D2438;
+    --bg-background-secondary: #102C44;
+    --bg-background-ternary: #1E3951;
+
+    --text-copy-primary: #CBD5E0;
+    --text-copy-secondary: #e2e8f0;
+    --text-copy-ternary: green;
+}
+
+.lift {
+    transition: transform 0.35s ease-in-out;
+}
+
+@variants hover {
+    .lift-up {
+        transform: translateY(-15px);
+    }
+}
+
+.content-wrapper {
+    transition: background-color 0.35s ease;
+}
