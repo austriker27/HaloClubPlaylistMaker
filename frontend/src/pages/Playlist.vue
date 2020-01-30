@@ -127,7 +127,7 @@
         />
     </div>
     <!-- GAMETYPE CARDS -->
-    <div class="my-20 flex flex-wrap justify-around"  v-if="selectedGame.gameTypes">
+    <div class="my-20 flex flex-wrap justify-around"  v-if="selectedGame && !selectedGameType.maps">
         <GameCard 
             v-for="type in selectedGame.gameTypes"
             :photoUrl="getImageUrl('HALO_GAMETYPES', type.name)"
@@ -137,7 +137,7 @@
         />
     </div>
     <!-- MAP VERSION -->
-    <div class="my-20 flex flex-wrap justify-around" v-if="selectedGameType.maps">
+    <div class="my-20 flex flex-wrap justify-around" v-if="selectedGame && selectedGameType && !selectedGameTypeMap">
         <GameCard 
             v-for="map in selectedGameType.maps"
             :photoUrl="getImageUrl('HALO_MAPS', map)"
