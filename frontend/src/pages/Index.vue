@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div class="container flex flex-col justify-between py-16">
+        <div class="container flex flex-col justify-between py-4 sm:py-6 md:py-12 xl:py-16">
 
             <div>
                 <!-- <h1 class="mb-2 font-black">Woodinville Halofest</h1> -->
@@ -57,7 +57,7 @@ export default {
                     date: '15 Feb 2020', 
                     name: 'Spring Halofest', 
                     url: 'https://guestboard.co/join/GKGiYLtuzTXwFry8',
-                    description: 'Lets get together and play videogames',
+                    description: 'Throwback to the 2000s halofest LAN party!',
                     photo: 'https://images.unsplash.com/photo-1482855549413-2a6c9b1955a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80'
                 }
         ]
