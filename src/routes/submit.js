@@ -2,6 +2,7 @@
 
 const dbAccess = require( '../helpers/sqlite' );
 const sqlite3 = require( 'sqlite3' );
+const config = require( '../config' );
 
 module.exports = async ( req, res ) => {
 
@@ -9,7 +10,7 @@ module.exports = async ( req, res ) => {
 
         const body = req.body;
 
-        const db = new sqlite3.Database( './db/halofest.db', sqlite3.OPEN_READWRITE, ( err ) => {
+        const db = new sqlite3.Database( config.DB_PATH, sqlite3.OPEN_READWRITE, ( err ) => {
             if ( err ) {
                 console.error( err.message );
             }
