@@ -14,12 +14,12 @@ module.exports = async ( req, res ) => {
             if ( err ) {
                 console.error( err.message );
             }
-        // console.log( 'Connected to the database.' );
+        console.log( 'Connected to the database.' );
         });
 
         const readCommand = `SELECT * FROM playlist WHERE game = '${ body.game }' AND gameType = '${ body.gameType }' AND map = '${ body.map }'`;
         const matchingRow = await dbAccess.readOne( db, readCommand );
-
+        console.log( matchingRow )
         let runCommand;
         if ( !matchingRow ) {
             runCommand = `INSERT INTO playlist (game, gameType, map, popularity) VALUES( '${ body.game }', '${body.gameType}', '${ body.map}', 1 )`;
@@ -28,12 +28,14 @@ module.exports = async ( req, res ) => {
         }
 
         await dbAccess.runCommand( db, runCommand );
+        console.log( "Wrote" )
         const rows = await dbAccess.read( db, `SELECT * FROM playlist` );
+        console.log( rows )
         db.close( ( err ) => {
             if ( err ) {
                 console.error( err.message );
             }
-        // console.log( 'Close the database connection.' );
+        console.log( 'Close the database connection.' );
         });
 
         res.status( 200 ).json({ "Message": "Good", "Playlist": rows });
