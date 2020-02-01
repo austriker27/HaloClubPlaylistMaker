@@ -7,7 +7,7 @@ const config = require( '../config' );
 module.exports = async ( req, res ) => {
 
     try {
-
+        console.log( config.DB_PATH )
         const db = new sqlite3.Database( config.DB_PATH, sqlite3.OPEN_READWRITE, ( err ) => {
             if ( err ) {
                 console.error( err.message );
