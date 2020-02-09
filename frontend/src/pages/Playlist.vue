@@ -90,7 +90,7 @@
                 </button>
                 <button 
                     class="bg-background-ternary rounded border-b-2 border-green-900 hover:border-green-900 hover:bg-green-900 hover:text-white text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
-                    type="button"
+                     type="submit"
                 >
                     Submit
                 </button>
