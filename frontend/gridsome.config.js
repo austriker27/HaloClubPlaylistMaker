@@ -19,7 +19,7 @@ module.exports = {
         typeName: 'Event', //required - needs to match template name
         route: '/events/:name' //optional
       }
-    }
+    },
     // {
     //     use: 'gridsome-plugin-purgecss',
     //     // default options, the following will be included if you don't provide anything
