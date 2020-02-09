@@ -40,12 +40,8 @@
 
             <div class="w-4/5 mx-auto mb-8">
                 <form 
-                    name="newsletter"
-                    method="post"
-                    v-on:submit.prevent="handleSubmit"
-                    action="/"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field"
+                   name="newsletter"
+                   action="https://getform.io/f/d4fc7dda-0d29-4ba5-ba40-9607ed06aa6a" method="POST"
                 >
                     <input type="hidden" name="form-name" value="contact" />
                     <p hidden>

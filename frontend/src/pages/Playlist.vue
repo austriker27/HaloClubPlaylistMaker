@@ -3,12 +3,15 @@
     <div class="container  md:max-w-lg lg:max-w-2xl mx-auto ">
         <h1 class="text-2xl font-black mb-2 ">Crowdsourced Playlist Generator</h1>
         <p>Use this form to submit options (games + map + gametype) so we can create a Playlist of games that everyone wants to play!</p>
+        <!-- action="/api/submit" -->
+        <!-- onSubmit={this.handleSubmit.bind(this)} -->
         <form 
             class="w-full max-w-lg my-10" 
-            action="/api/submit"
+            
             name="submit"
             method="post"
-            v-on:submit.prevent="handleSubmit"
+            action="/.netlify/functions/submit/"
+            v-on:submit.prevent="handleSubmit()"
             >
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
@@ -156,7 +159,9 @@
 import { dropdowns } from '~/data/games.json'
 import GameCard from '~/components/GameCard.vue'
 import IMAGE_URLS from "~/data/imageUrls.js";
-
+var Airtable = require('airtable');
+// var base = new Airtable({apiKey: process.env.AIRTABLE_KEY}).base(process.env.AIRTABLE_BASE);
+var base = new Airtable({apiKey: 'keyoRk8bb6wKnJSbk'}).base('appJlIA7h6NdA98zq');
 
 export default {
     metaInfo: {
