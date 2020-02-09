@@ -11,7 +11,6 @@
             name="submit"
             method="post"
             action="/.netlify/functions/submit/"
-            v-on:submit.prevent="handleSubmit()"
             >
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
