@@ -1,4 +1,4 @@
-const Airtable = require('airtable');
+// const Airtable = require('airtable');
 
 exports.handler = function(event, context, callback) {
     callback(null, {
@@ -16,7 +16,7 @@ exports.handler = function(event, context, callback) {
 //     });
 
 //     const base = Airtable.base(AT_BASE);
-//     // base('Table 1').create([
+//     // base('2020_02_15').create([
 //     //     {
 //     //         "Game Version": "Halo 2",
 //     //         "Game Map": "Lockout",
