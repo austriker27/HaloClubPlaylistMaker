@@ -144,7 +144,7 @@
 
     <!-- cards to select options -->
     <!-- GAME VER CARDS -->
-    <div class="my-20 flex flex-wrap justify-around container  md:max-w-2xl lg:max-w-3xl mx-auto " v-if="!selectedGame">
+    <div class="lg:my-20 flex flex-wrap justify-around container  md:max-w-2xl lg:max-w-3xl mx-auto " v-if="!selectedGame">
         <GameCard 
             v-for="game in dropdowns"
             :photoUrl="getImageUrl('HALO_GAMES', game.name)"
@@ -155,7 +155,7 @@
         />
     </div>
     <!-- GAMETYPE CARDS -->
-    <div class="my-20 flex flex-wrap justify-around"  v-if="selectedGame && !selectedGameType.maps">
+    <div class="lg:my-20 flex flex-wrap justify-around"  v-if="selectedGame && !selectedGameType.maps">
         <GameCard 
             v-for="type in selectedGame.gameTypes"
             :photoUrl="getImageUrl('HALO_GAMETYPES', type.name)"
@@ -165,7 +165,7 @@
         />
     </div>
     <!-- MAP VERSION -->
-    <div class="my-20 flex flex-wrap justify-around" v-if="selectedGame && selectedGameType && !selectedGameTypeMap">
+    <div class="lg:my-20 flex flex-wrap justify-around" v-if="selectedGame && selectedGameType && !selectedGameTypeMap">
         <GameCard 
             v-for="map in selectedGameType.maps"
             :photoUrl="getImageUrl('HALO_MAPS', map)"
