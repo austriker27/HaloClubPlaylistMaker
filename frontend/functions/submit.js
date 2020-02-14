@@ -23,11 +23,11 @@ exports.handler = function(event, context, callback) {
         records.forEach(function (record) {
             console.log(record.getId());
         });
-        });
+    });
 
     callback(null, {
         statusCode: 200,
-        body: context
+        body: null
     });
 
 }
