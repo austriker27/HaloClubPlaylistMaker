@@ -25,7 +25,7 @@
                     </label>
                     <div class="relative">
                         <select class="block appearance-none w-full bg-gray-200 border border-gray-200  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-green-900"  v-model="selectedGame">
-                            <option disabled value="">Choose a Halo game</option>
+                            <!-- <option disabled value="">Halo games...</option> -->
                             <option class="text-green-900" v-for="(game, index) in dropdowns" :key="index" :value="game">{{ game.name }}</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 ">
@@ -35,13 +35,13 @@
                 </div>
 
                 <!-- GAMETYPE OPTION -->
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0" >
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0" v-if="selectedGame" >
                     <label class="block uppercase tracking-wide  text-xs font-bold mb-2" for="grid-map">
                         Gametype
                     </label>
                     <div class="relative">
                         <select class="block appearance-none w-full bg-gray-200 border border-gray-200  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-green-900" v-model="selectedGameType">
-                            <option disabled value="">Choose a gametype</option>
+                            <!-- <option disabled value="">Choose a gametype</option> -->
                             <option class="text-green-900" v-for="(type, index) in selectedGame.gameTypes" :key="index" :value="type">{{ type.name }}</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 ">
@@ -51,13 +51,13 @@
                 </div>
 
                 <!-- MAP OPTION -->
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0" >
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0" v-if="selectedGame && selectedGameType"  >
                     <label class="block uppercase tracking-wide  text-xs font-bold mb-2" for="grid-map">
                         Map
                     </label>
                     <div class="relative">
                         <select class="block appearance-none w-full bg-gray-200 border border-gray-200  py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 text-green-900" v-model="selectedGameTypeMap">
-                            <option disabled value="">Choose a map</option>
+                            <!-- <option disabled value="">Choose a map</option> -->
                             <option class="text-green-900" v-for="(map, index) in selectedGameType.maps" :key="index" :value="map">{{ map }}</option>
                         </select>
                         <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 ">
