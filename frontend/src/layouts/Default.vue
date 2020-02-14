@@ -29,7 +29,7 @@
         </nav>
     </header>
 
-    <div class="flex-grow font-sans">
+    <div class="flex-grow font-sans" style="min-height: 70vh;">
         <slot/>
     </div>
 

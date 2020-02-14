@@ -71,19 +71,12 @@
 
             </div>
 
-            <div class="flex items-center justify-between mt-4" v-if="selectedGame && selectedGameType && selectedGameTypeMap">
-                <div class="">
-                    <p class="block uppercase tracking-wide  text-xs font-bold mb-1">
-                        Selected:
-                    </p>
-                    <p>
-                    {{ selectedGame.name }}: {{ selectedGameType.name }} on {{ selectedGameTypeMap }}.
-                    </p>
-                </div>
+            <div class="flex items-center justify-between mt-4" v-if="!formSubmitSuccess">
+                
                 <button 
                     class="font-regular bg-background-secondary rounded border-2 border-green-900 hover:border-green-900 hover:bg-green-900 hover:text-white text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
                     type="button"
-                    @click="resetForm()"
+                    @click="clearSelection()"
                 >
                     Reset
                 </button>
@@ -93,6 +86,37 @@
                 >
                     Submit
                 </button>
+            </div>
+            <div class="" v-if="selectedGame && selectedGameType && selectedGameTypeMap && !formSubmitSuccess">
+                <p class="block uppercase tracking-wide text-xs font-bold my-1">
+                    Selected:
+                </p>
+                <p>
+                {{ selectedGame.name }}: {{ selectedGameType.name }} on {{ selectedGameTypeMap }}.
+                </p>
+            </div>
+            <div v-if="formSubmitSuccess">
+                <p class="text-xs">
+                    You successfully submitted: 
+                    <span class=" tracking-wide uppercase">
+                        {{ selectedGame.name }}: {{ selectedGameType.name }} on {{ selectedGameTypeMap }}</span>. 🎉
+                </p>
+                <p class="text-xs">
+                    You can reset and submit again.
+                </p>
+                <button 
+                    class="font-regular bg-background-secondary rounded border-2 border-green-900 hover:border-green-900 hover:bg-green-900 hover:text-white text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                    type="button"
+                    @click="resetForm()"
+                >
+                    Reset
+                </button>
+                    <!-- <p class="block uppercase tracking-wide  text-xs font-bold mb-1">
+                        Selected:
+                    </p>
+                    <p>
+                    {{ selectedGame.name }}: {{ selectedGameType.name }} on {{ selectedGameTypeMap }}.
+                    </p> -->
             </div>
         </form>
 
@@ -105,15 +129,17 @@
                 <!-- <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg> -->
             <!-- </div>
         </div> -->
-        <div class="bg-green-100 border-t-4 border-green-500 rounded-b text-green-900 px-4 py-3 shadow-md" role="alert">
+        <!-- <div class="bg-green-100 border-t-4 border-green-500 rounded-b text-green-900 px-4 py-3 shadow-md" role="alert">
             <div class="flex">
-                <div class="py-1"><svg class="fill-current h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg></div>
+                <div class="py-1">
+                    <svg class="fill-current h-6 w-6 text-green-500 mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M2.93 17.07A10 10 0 1 1 17.07 2.93 10 10 0 0 1 2.93 17.07zm12.73-1.41A8 8 0 1 0 4.34 4.34a8 8 0 0 0 11.32 11.32zM9 11V9h2v6H9v-4zm0-6h2v2H9V5z"/></svg>
+                </div>
                 <div>
-                <p class="font-bold font-haloSans">Note from developer:</p>
-                <p class="text-sm ">In the not too distant future cards will be clickable and submit will work.</p>
+                    <p class="font-bold font-haloSans">Note from developer:</p>
+                    <p class="text-sm ">In the not too distant future cards will be clickable and submit will work.</p>
                 </div>
             </div>
-            </div>
+        </div> -->
       </div>
 
     <!-- cards to select options -->
@@ -158,9 +184,6 @@
 import { dropdowns } from '~/data/games.json'
 import GameCard from '~/components/GameCard.vue'
 import IMAGE_URLS from "~/data/imageUrls.js";
-var Airtable = require('airtable');
-// var base = new Airtable({apiKey: process.env.AIRTABLE_KEY}).base(process.env.AIRTABLE_BASE);
-var base = new Airtable({apiKey: 'keyoRk8bb6wKnJSbk'}).base('appJlIA7h6NdA98zq');
 
 export default {
     metaInfo: {
@@ -177,6 +200,7 @@ export default {
             selectedGameTypeMap: "",
             formData: {},
             formStateEmpty: true,
+            formSubmitSuccess: false,
         }
     },
     computed: {
@@ -210,21 +234,20 @@ export default {
                     ...data,
                 }),
             })
-            .then(() => console.log('success'))
-            .catch(error => alert(error))
 
-            // reset the form: 
-            // todo build success state with message
-            // this.resetForm()
-
-            .then(() => console.log('success'))
+            .then(() => this.formSubmitSuccess = true)
+            .then(() => this.resetForm)
             .catch(error => alert(error))
         },
         resetForm() {
+            this.formStateEmpty = true,
+            this.formSubmitSuccess = false,
+            this.clearSelection()
+        },
+        clearSelection() {
             this.selectedGame = "",
             this.selectedGameType = "",
-            this.selectedGameTypeMap = "",
-            this.formStateEmpty = true
+            this.selectedGameTypeMap = ""
         },
         handleCardGameClick(clickedItem) {
             console.log(clickedItem)
