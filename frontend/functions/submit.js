@@ -1,56 +1,31 @@
+const Airtable = require('airtable');
+const { AIRTABLE_KEY, AIRTABLE_BASE } = process.env;
+const base = new Airtable({apiKey: AIRTABLE_KEY}).base(AIRTABLE_BASE);
 
+
+// old function:
 exports.handler = function(event, context, callback) {
+    // take data from submit and send to airtable and create reports
+    const urlParams = new URLSearchParams(event.body);
+
+     base(AIRTABLE_TABLE).create([
+         {
+            "fields": {
+                "Game Version": urlParams.get("Game Version"),
+                "Game Map": urlParams.get("Game Map"),
+                "Gametype": urlParams.get("Gametype"),
+
+            }
+        },
+     ], err => {
+      if (err) return reject(err);
+
+      resolve();
+    });
+
     callback(null, {
         statusCode: 200,
-        body: "Hello, World"
+        body: context
     });
+
 }
-
-// const Airtable = require('airtable');
-// const saveUser = async ({ name, email, message }) => {
-//   return new Promise((resolve, reject) => {
-//     const { AT_API_KEY: apiKey, AT_BASE, AT_TABLE } = process.env;
-
-//     Airtable.configure({
-//       apiKey
-//     });
-
-//     const base = Airtable.base(AT_BASE);
-//     // base('2020_02_15').create([
-//     //     {
-//     //         "Game Version": "Halo 2",
-//     //         "Game Map": "Lockout",
-//     //         "Gametype": "Team SWAT"
-//     //     },
-//     // ], function(err, records) {
-//     // if (err) {
-//     //     console.error(err);
-//     //     return;
-//     // }
-//     base(AT_TABLE).create({ name, email, message }, err => {
-//       if (err) return reject(err);
-
-//       resolve();
-//     });
-//   });
-// };
-
-
-        // handleAirtableSubmit(){
-        //     console.log(formData);
-        //     base('Table 1').create([
-        //         {
-        //             "Game Version": "Halo 2",
-        //             "Game Map": "Lockout",
-        //             "Gametype": "Team SWAT"
-        //         },
-        //     ], function(err, records) {
-        //     if (err) {
-        //         console.error(err);
-        //         return;
-        //     }
-        //     records.forEach(function (record) {
-        //         console.log(record.getId());
-        //     });
-        //     });
-        // },

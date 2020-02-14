@@ -5,12 +5,12 @@
         <p>Use this form to submit options (games + map + gametype) so we can create a Playlist of games that everyone wants to play!</p>
         <!-- action="/api/submit" -->
         <!-- onSubmit={this.handleSubmit.bind(this)} -->
+            <!-- method="post" -->
         <form 
-            class="w-full max-w-lg my-10" 
-            
             name="submit"
-            method="post"
-            action="/.netlify/functions/submit/"
+            class="w-full max-w-lg my-10" 
+            v-on:submit.prevent="handleSubmit"
+            
             >
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>
@@ -192,18 +192,30 @@ export default {
                 .join('&')
         },
         handleSubmit(e) {
-            console.log(formData);
+            let data = {
+                "Game Version": this.selectedGame,
+                "Game Map": this.selectedGameTypeMap,
+                "Gametype": this.selectedGameType
+            }
 
-            fetch('/', {
+            console.log(data);
+
+            fetch('/.netlify/functions/submit/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                // headers: { 'Content-Type': 'application/json' },
+                // body: data
                 body: this.encode({
                     'form-name': e.target.getAttribute('name'),
-                    ...this.formData,
+                    ...data,
                 }),
             })
+            .then(() => console.log('success'))
+            .catch(error => alert(error))
 
-            this.resetForm()
+            // reset the form: 
+            // todo build success state with message
+            // this.resetForm()
 
             .then(() => console.log('success'))
             .catch(error => alert(error))
