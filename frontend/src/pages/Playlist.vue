@@ -10,7 +10,7 @@
             name="submit"
             class="w-full max-w-lg my-10" 
             v-on:submit.prevent="handleSubmit"
-            
+            method="post"
             >
             <input type="hidden" name="form-name" value="contact" />
             <p hidden>

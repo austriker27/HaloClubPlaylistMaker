@@ -1,5 +1,5 @@
 const Airtable = require('airtable');
-const { AIRTABLE_KEY, AIRTABLE_BASE } = process.env;
+const { AIRTABLE_KEY, AIRTABLE_BASE, AIRTABLE_TABLE } = process.env;
 const base = new Airtable({apiKey: AIRTABLE_KEY}).base(AIRTABLE_BASE);
 
 exports.handler = function(event, context, callback) {
