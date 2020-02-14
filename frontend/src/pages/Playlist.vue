@@ -193,9 +193,9 @@ export default {
         },
         handleSubmit(e) {
             let data = {
-                "Game Version": this.selectedGame,
+                "Game Version": this.selectedGame.name,
                 "Game Map": this.selectedGameTypeMap,
-                "Gametype": this.selectedGameType
+                "Gametype": this.selectedGameType.name
             }
 
             console.log(data);
