@@ -15,11 +15,15 @@ exports.handler = function(event, context, callback) {
 
             }
         },
-     ], err => {
-      if (err) return reject(err);
-
-      resolve();
-    });
+     ], function(err, records) {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        records.forEach(function (record) {
+            console.log(record.getId());
+        });
+        });
 
     callback(null, {
         statusCode: 200,
